@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register as Donor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <h1> Blood Donation & Emergency</h1>
+    <h3>Donor Registration</h3>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="index.html"> Home</a>
+    <a href="register.html" class="active">Donor Registeration</a>
+    <a href="search.html">Search Donor</a>
+    <a href="emergency.html">Emergency Donor</a>
+</nav>
+
+<!-- Registration Form -->
+<section class="form-section">
+    <h2>Register as a Blood Donor</h2>
+
+    <form id="registerForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label>Blood Group</label>
+        <select id="bloodGroup" required>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+        <label>Location</label>
+        <select id="location" required>
+            <option>Kasargod</option>
+            <option>Wayanad</option>
+            <option>Kozhikode</option>
+            <option>Malappuram</option>
+            <option>Palakkad</option>
+            <option>Kannur</option>
+            <option>Thrissur</option>
+            <option>Ernakulam</option>
+            <option>Kottayam</option>
+            <option>Pathanamthitta</option>
+            <option>Alappuzha</option>
+            <option>Kollam</option>
+            <option>Idukki</option>
+            <option>Thiruvananthapuram</option>
+        </select>
+
+        <label>Availability</label>
+        <select id="availability">
+            <option>Available</option>
+            <option>Not Available</option>
+        </select>
+
+        <button type="submit">Register</button>
+
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Blood Donation System</p>
+</footer>
+
+<!-- External JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
