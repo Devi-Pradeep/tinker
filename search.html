@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Donor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <h1> Blood Donation & Emergency</h1>
+    <h3>Find Blood Donors</h3>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Donor Registeration</a>
+    <a href="search.html"class="active">Search Donor</a>
+    <a href="emergency.html">Emergency Donor</a>
+</nav>
+
+<!-- Search Section -->
+<section class="search-section">
+    <h2>Search for Blood Donors</h2>
+
+    <form id="searchForm">
+
+        <label>Blood Group</label>
+        <select id="bloodGroup" required>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+
+        <label>Location</label>
+
+    
+        <select id="location" required>
+            <option>Kasargod</option>
+            <option>Wayanad</option>
+            <option>Kozhikode</option>
+            <option>Malappuram</option>
+            <option>Palakkad</option>
+            <option>Kannur</option>
+            <option>Thrissur</option>
+            <option>Ernakulam</option>
+            <option>Kottayam</option>
+            <option>Pathanamthitta</option>
+            <option>Alappuzha</option>
+            <option>Kollam</option>
+            <option>Idukki</option>
+            <option>Thiruvananthapuram</option>
+        <select>
+        <button type="submit">Search</button>
+
+    </form>
+</section>
+
+<!-- Results Section -->
+<section class="results-section">
+    <h2>Available Donors</h2>
+
+    <div id="results">
+        <!-- JS will display results here -->
+
+        <p>No results yet. Search to find donors.</p>
+
+        
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Blood Donation System</p>
+</footer>
+
+<!-- External JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
