@@ -1,0 +1,248 @@
+/* 🔹 GENERAL RESET */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f7;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🔹 HEADER */
+header {
+    background: #c0392b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* 🔹 NAVIGATION */
+nav {
+    background: #2c3e50;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #77a8e7;
+}
+nav a.active {
+    background-color: #4b83d6; /* blood-red background */
+    color: #f5eaea !important;  /* force white text for visibility */
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* 🔹 PARAGRAPH FIRST LETTER */
+p::first-letter { 
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* 🔹 DISPLAY SECTION (INDEX PAGE) */
+.display {
+    text-align: center;
+    padding: 26px 20px;
+    background: white;
+    background-image: url("imageblood.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.display * {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.display h2 {
+    margin-bottom: 70px;
+    font-size: 35px;
+}
+
+.display p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.display img {
+    width: 350px;
+    max-width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* 🔹 SEARCH SECTION */
+.search-section {
+    background: #ecf0f1;
+    padding: 88px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.search-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* 🔹 SEARCH FORM */
+#searchForm {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#searchForm select,
+#searchForm input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchForm button {
+    padding: 10px 20px;
+    background: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchForm button:hover {
+    background: #922b21;
+}
+
+/* 🔹 RESULTS SECTION (SEARCH PAGE) */
+.results-section {
+    background: #f8f9fa;
+    padding: 30px;
+    text-align: center;
+}
+
+.results-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#results {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#results p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* 🔹 FORM SECTION (Emergency & Register Page) */
+.form-section {
+    background: #ecf0f1;
+    padding: 30px;
+    text-align: center;
+}
+
+.form-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#emergencyForm,
+#registerForm {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#emergencyForm input,
+#emergencyForm select,
+#emergencyForm button,
+#registerForm input,
+#registerForm select,
+#registerForm button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#emergencyForm button,
+#registerForm button {
+    background: #c0392b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#emergencyForm button:hover,
+#registerForm button:hover {
+    background: #922b21;
+}
+
+/* 🔹 FOOTER */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* 🔹 FLEX TO KEEP FOOTER AT BOTTOM */
+main {
+    flex: 1;  /* ensures footer stays at bottom */
+}
+
+/* 🔹 RESPONSIVE */
+@media (max-width: 600px) {
+    .display h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    #searchForm select,
+    #searchForm input {
+        width: 100%;
+    }
+
+    #emergencyForm,
+    #registerForm {
+        width: 90%;
+    }
+}
