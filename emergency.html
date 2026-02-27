@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency Request</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1> Blood Donation & Emergency</h1>
+    <h3>Emergency Blood Request</h3>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Donor Registeration</a>
+    <a href="search.html">Search Donor</a>
+    <a href="emergency.html"class="active">Emergency Donor</a>
+</nav>
+
+<section class="form-section">
+    <h2> Emergency Request</h2>
+
+    <form id="emergencyForm">
+
+        <label>Patient Name</label>
+        <input type="text" required>
+
+        <label>Blood Group</label>
+        <select required>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+        </select>
+
+        <label>Location</label>
+        <select required>
+            <option>Kasargod</option>
+            <option>Wayanad</option>
+            <option>Kozhikode</option>
+            <option>Malappuram</option>
+            <option>Palakkad</option>
+            <option>Kannur</option>
+            <option>Thrissur</option>
+            <option>Ernakulam</option>
+            <option>Kottayam</option>
+            <option>Pathanamthitta</option>
+            <option>Alappuzha</option>
+            <option>Kollam</option>
+            <option>Idukki</option>
+            <option>Thiruvananthapuram</option>
+        </select>
+        <label>Contact Number</label>
+        <input type="tel" required>
+
+        <button type="submit">Send Alert</button>
+
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Blood Donation System</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
